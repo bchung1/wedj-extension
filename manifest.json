@@ -4,11 +4,12 @@
 	"version": "1.0",
 	"description": "Host component of wedj application",
 	"background": {
-		"scripts": ["assets/js/jquery.min.js", "background.js"]
+		"scripts": ["assets/js/socket.io.js", "assets/js/jquery.min.js", "background.js"]
 	},
 	"browser_action": {
-		"default_popup": ""
+		"default_popup": "popup.html"
+
 	}, 
-	"permissions": ["tabs"]
+	"permissions": ["tabs","http://*/","http://*/*"]
 }
 
